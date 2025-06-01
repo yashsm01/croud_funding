@@ -1,0 +1,10 @@
+/home/yash/croudfunding/target/debug/deps/borsh_schema_derive_internal-5058443f57ad416b.d: /home/yash/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/borsh-schema-derive-internal-0.10.4/src/lib.rs /home/yash/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/borsh-schema-derive-internal-0.10.4/src/helpers.rs /home/yash/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/borsh-schema-derive-internal-0.10.4/src/enum_schema.rs /home/yash/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/borsh-schema-derive-internal-0.10.4/src/struct_schema.rs
+
+/home/yash/croudfunding/target/debug/deps/libborsh_schema_derive_internal-5058443f57ad416b.rlib: /home/yash/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/borsh-schema-derive-internal-0.10.4/src/lib.rs /home/yash/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/borsh-schema-derive-internal-0.10.4/src/helpers.rs /home/yash/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/borsh-schema-derive-internal-0.10.4/src/enum_schema.rs /home/yash/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/borsh-schema-derive-internal-0.10.4/src/struct_schema.rs
+
+/home/yash/croudfunding/target/debug/deps/libborsh_schema_derive_internal-5058443f57ad416b.rmeta: /home/yash/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/borsh-schema-derive-internal-0.10.4/src/lib.rs /home/yash/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/borsh-schema-derive-internal-0.10.4/src/helpers.rs /home/yash/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/borsh-schema-derive-internal-0.10.4/src/enum_schema.rs /home/yash/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/borsh-schema-derive-internal-0.10.4/src/struct_schema.rs
+
+/home/yash/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/borsh-schema-derive-internal-0.10.4/src/lib.rs:
+/home/yash/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/borsh-schema-derive-internal-0.10.4/src/helpers.rs:
+/home/yash/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/borsh-schema-derive-internal-0.10.4/src/enum_schema.rs:
+/home/yash/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/borsh-schema-derive-internal-0.10.4/src/struct_schema.rs:

@@ -1,0 +1,212 @@
+/**
+ * Program IDL in camelCase format in order to be used in JS/TS.
+ *
+ * Note that this is only a type helper and is not the actual IDL. The original
+ * IDL can be found at `target/idl/croudfunding.json`.
+ */
+export type Croudfunding = {
+  "address": "5Gbm8uSMg1i6Agj9NqcccywoCKPEiVvBWRC2RVUsDjHL",
+  "metadata": {
+    "name": "croudfunding",
+    "version": "0.1.0",
+    "spec": "0.1.0",
+    "description": "Created with Anchor"
+  },
+  "instructions": [
+    {
+      "name": "create",
+      "docs": [
+        "Creates a new crowdfunding campaign",
+        "",
+        "# Arguments",
+        "* `ctx` - The context holding all accounts involved in this instruction",
+        "* `name` - The name of the campaign",
+        "* `description` - A short description of the campaign"
+      ],
+      "discriminator": [
+        24,
+        30,
+        200,
+        40,
+        5,
+        28,
+        7,
+        119
+      ],
+      "accounts": [
+        {
+          "name": "campaign",
+          "docs": [
+            "Initializes the campaign account with PDA (Program Derived Address)",
+            "Uses seeds = [b\"campaign\", user key] to derive unique address"
+          ],
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  99,
+                  97,
+                  109,
+                  112,
+                  97,
+                  105,
+                  103,
+                  110
+                ]
+              },
+              {
+                "kind": "account",
+                "path": "user"
+              }
+            ]
+          }
+        },
+        {
+          "name": "user",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "systemProgram",
+          "address": "11111111111111111111111111111111"
+        }
+      ],
+      "args": [
+        {
+          "name": "name",
+          "type": "string"
+        },
+        {
+          "name": "description",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "donate",
+      "discriminator": [
+        121,
+        186,
+        218,
+        211,
+        73,
+        70,
+        196,
+        180
+      ],
+      "accounts": [
+        {
+          "name": "campaign",
+          "writable": true
+        },
+        {
+          "name": "user",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "systemProgram",
+          "address": "11111111111111111111111111111111"
+        }
+      ],
+      "args": [
+        {
+          "name": "amount",
+          "type": "u64"
+        }
+      ]
+    },
+    {
+      "name": "withdraw",
+      "docs": [
+        "Withdraws funds from a campaign",
+        "",
+        "# Arguments",
+        "* `ctx` - The context holding the campaign and user accounts",
+        "* `amount` - The amount to withdraw in lamports"
+      ],
+      "discriminator": [
+        183,
+        18,
+        70,
+        156,
+        148,
+        109,
+        161,
+        34
+      ],
+      "accounts": [
+        {
+          "name": "campaign",
+          "writable": true
+        },
+        {
+          "name": "user",
+          "writable": true,
+          "signer": true
+        }
+      ],
+      "args": [
+        {
+          "name": "amount",
+          "type": "u64"
+        }
+      ]
+    }
+  ],
+  "accounts": [
+    {
+      "name": "campaign",
+      "discriminator": [
+        50,
+        40,
+        49,
+        11,
+        157,
+        220,
+        229,
+        192
+      ]
+    }
+  ],
+  "errors": [
+    {
+      "code": 6000,
+      "name": "unauthorized",
+      "msg": "You are not authorized to perform this action."
+    },
+    {
+      "code": 6001,
+      "name": "insufficientFunds",
+      "msg": "Not enough funds in the campaign account."
+    }
+  ],
+  "types": [
+    {
+      "name": "campaign",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "name",
+            "type": "string"
+          },
+          {
+            "name": "description",
+            "type": "string"
+          },
+          {
+            "name": "amountDonated",
+            "type": "u64"
+          },
+          {
+            "name": "admin",
+            "type": "pubkey"
+          }
+        ]
+      }
+    }
+  ]
+};
